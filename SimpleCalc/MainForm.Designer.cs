@@ -52,6 +52,7 @@
             this.dotBTN = new System.Windows.Forms.Button();
             this.resultBTN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.hiddenTXT = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -279,11 +280,21 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Result";
             // 
+            // hiddenTXT
+            // 
+            this.hiddenTXT.Location = new System.Drawing.Point(246, 158);
+            this.hiddenTXT.Name = "hiddenTXT";
+            this.hiddenTXT.ReadOnly = true;
+            this.hiddenTXT.Size = new System.Drawing.Size(149, 24);
+            this.hiddenTXT.TabIndex = 20;
+            this.hiddenTXT.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 331);
+            this.Controls.Add(this.hiddenTXT);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resultBTN);
             this.Controls.Add(this.divBTN);
@@ -341,6 +352,7 @@
         private System.Windows.Forms.Button dotBTN;
         private System.Windows.Forms.TextBox resultBTN;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox hiddenTXT;
     }
 }
 
